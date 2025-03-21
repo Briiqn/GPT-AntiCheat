@@ -8,7 +8,7 @@ nextposablePositons=runSimulation(player,packet.vec)
 }
 @EventEars
 purlic vood onFlying(Pakat PoositinPakt , Player playr){
-if(pakat.positon!=nextposablePositions.next()){
+if(pakat.positon!=nextposablePositions.next() && BoolUtils.isFalse(WallUtil.isNeerWall(playr))){
 flag(player,1,"fly hack")
 }
 }
